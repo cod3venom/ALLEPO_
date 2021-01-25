@@ -1,0 +1,75 @@
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <link rel="stylesheet" href="../../../ASSETS/CSS/Fonts.css">
+    </head>
+    <style type="text/css">
+        .gradient{
+            background-color: #0093E9;
+            background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
+
+        }
+        html,body, #body{
+            width: 100%; height: 100%;
+            margin: 0;
+           white-space: nowrap;
+            overflow: hidden; position: relative;
+        }
+        h1,h2,span{
+            color: #fff;
+        }
+        .content{
+            width: 100%; height: 100vh;
+            position: absolute; top: 30%;
+        }
+        .container{
+            width: 95%; margin:  0 auto; text-align: center;
+        }
+         
+        .title > h1{
+            font-family: 'kanit_regular';
+        }
+        .name > h2{
+            font-family: 'proxima_bold';
+        }
+        .description >span{
+            font-family: 'kanit_regular';
+        }
+        .activate{
+            margin-top: 2%;
+        }
+        .activate button{
+            width: 220px; height: 35px;
+            font-family: 'kanit_semi';
+            border-radius: 5px;
+            background-color: #1F76B0; color: #fff;
+            outline: none; border:none;
+            transition: 500ms; cursor: pointer;
+        }
+        .activate button:hover{
+            transition: 500ms; transform: scale(1.05);
+        }
+    </style>
+    <body>
+        <div id="body" class="gradient">
+            <div class="content">
+                <div class="container">
+                    <div class="title">
+                        <h1>Kupiłes gre</h1>
+                    </div>    
+                    <div class="name">
+                        <h2>CALL OF DUTY MW3</h2>
+                    </div>
+                    <div class="description">
+                        <span>Aby korzystać z gry, wygeneruj kod na wlasnej konsoli, i kliknij na przycisk "AKTYWUJ GRE".</span>
+                    </div>
+                    <div class="activate">
+                        <a href="http://localhost/allegro/index.php?activate&game=PRODUCT_NAME++;"><button>AKTYWUJ GRE</button></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

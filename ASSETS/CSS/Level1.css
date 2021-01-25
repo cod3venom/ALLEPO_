@@ -1,0 +1,536 @@
+html{
+    width: 100%; margin: 0;  
+    background: #ECEFF1; 
+}
+body{
+    width: 100%; margin: 0; overflow-x: hidden;
+    background: #ECEFF1; 
+}
+.shadow{
+	box-shadow: 0 8px 10px 1px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12), 0 5px 5px -3px rgba(0, 0, 0, 0.2); 
+}
+.x{
+    width: 100%; height: 15px; background-color: #DADCE0;
+}
+.flex{
+    display: flex; justify-content: flex-start; align-items: flex-start;
+}
+.between{
+    display: flex; justify-content: space-between; 
+}
+.centered{
+    display: flex; justify-content: center; align-items: center;
+}
+.horizontal{
+    width: 100%; height: 10px; background-color: #DADCE0;
+}
+.leftToggle, .topToggle{
+    display: none;
+}
+.main{
+    background-color: #DADCE0; margin-top: 45px;
+}
+
+.TopBar{
+    position: fixed; left: 60px; top: 0; right: 0;   height: 55px;   
+    background-color: #2B2B2B; z-index: 998;
+   border-bottom: 1px solid #DADCE0;
+}
+.Sidebar{
+    position: fixed; left: 0; top: 0px; bottom: 0; width: 80px; height: 100vh;
+    background-color: #2B2B2B; z-index: 999; border-right: 2px solid #000000;
+}
+.Main_content{
+    width: 96%; height: 100vh; background-color: #FFFFFF;
+    margin-left: 4%; margin-top: .5rem;
+}
+#subContainer{
+    width: 95%; height: 95%; margin: 0 auto; margin-top: .5rem;
+}
+
+ 
+.topLogo span{
+    font-family: 'kanit_regular'; font-size: 30px; color: #FF5A00;
+    font-weight: bolder;
+}
+ 
+
+ 
+.Sidebar .sideMenu{
+   position: absolute; top: 5%; width: 100%; text-align: center;
+}
+.sideMenu .side_item{
+    width: 100%; height: 80px; display: block; cursor: pointer;
+    transition: all 500ms ease-in-out; 
+}
+.sideMenu .side_item:hover{
+    transform: scale(1.09); transition: all 500ms ease-in-out;
+    text-decoration: none;
+}
+.sideMenu .side_item img{
+    height: 30px;
+}
+.sideMenu .side_item span{
+    font-family: 'kanit_regular'; color: #80817C; font-size: 15px;
+}
+
+ 
+.add_store{
+    display: none; width: 55%; margin: 0 auto; margin-top: 2%; 
+}
+.add_store form{
+    width: 100%; position: relative;  
+}
+.add_store form span{
+    font-family: 'kanit_bold'; font-size: 30px;
+}
+.add_store form input{
+    display: block; width:100%; height: 35px; outline:none; margin-top: 1%;
+    padding-left: .5rem; font-family: 'comforta_regular'; border:1px solid #DADCE0;
+    border-radius: 10px;
+}
+.add_store form button{
+    display: block; width: 100%; height: 35px;
+    border-radius: 10px; background-color: #FF5A00;
+    color: #fff; font-family: 'kanit_regular'; 
+    outline: none; border:none; margin-top: 1%;
+}
+.stores_holder{
+    width: 100%; height: auto;  flex-wrap: wrap;
+    background-color: #fff;
+}
+.StoreBox{
+    width:250px; height:auto;   border-radius: 5%; cursor: pointer;
+    margin-left: 2%; margin-top: 5%; transition: all 500ms ease-in-out;
+    padding-bottom: 1%; border:1px solid #DEE0E4;
+}
+.StoreBox.clean{
+    width:250px; height: 280px;
+    background-color: transparent; border:1px solid #DEE0E4;
+}
+ 
+.StoreBox:hover{
+    transform: scale(1.09); transition: all 500ms ease-in-out;
+}
+.StoreBox .store_content{
+    width: 99%; margin: 0 auto;   text-align: center;
+    padding: 15px 1px 1px 1px;
+}
+.StoreBox .store_content .store_img {
+    text-align: center;
+}
+.StoreBox .store_content .store_img img{
+    width: 65%;
+}
+.StoreBox .store_title {
+    text-align: center;
+}
+.StoreBox .store_title span{
+    font-family: "comforta_bold"; font-size: 30px;
+}
+.StoreBox .store_footer{
+    text-align: center; margin-top: 2%;
+}
+
+.StoreBox .store_footer .choose_store{
+    width: 75%; height: 35px; border-radius: 5px; border:none;
+    cursor: pointer; background-color: #FF5A00; color: #FFFFFF; font-family: 'proxima_bold'; 
+}
+.StoreBox .store_footer .remove_store{
+    width: auto; height: 35px; margin-left: 1%; border-top-right-radius: 5px; border-bottom-right-radius: 5px; border:none;
+    cursor: pointer;  background-color: #FFFFFF;
+}
+
+
+.table_title{
+    width: 95%; height: 65px; line-height: 75px; margin: 0 auto; text-align: left;
+    position: relative;
+}
+.table_title span{
+    font-family: 'proxima_bold'; font-size: 24px; color: #DADCE0;
+}
+.user-dropdown{
+    position: absolute; right: 1%;  
+}
+.user-dropdown .user-avatar button{
+    border:none; background-color: transparent; outline: none; position: relative;
+}
+.user-dropdown .user-avatar button div{
+    background-color: #81827D; padding: 5px; border-radius: 50%;
+}
+.user-dropdown .user-avatar button div img{
+    height: 25px; vertical-align: middle; border-radius: 50%;
+}
+.user-dropdown .user-avatar button span{
+    font-family: 'kanit_regular'; font-size: 20px; padding-left: .5rem; color: #fff;
+}
+.user-dropdown .user-avatar button .down{
+    height: 10px; vertical-align: middle; margin-left: .3rem;   
+}
+ 
+.top_user_options{
+    display: none; position: fixed; top: 55px; right: 0;  width:200px; height: 300px;   background-color: #2B2B2B;
+    overflow-y: scroll; overflow-x: hidden;
+}
+.Top_user_option:nth-child(1)
+{
+    border-top:1px solid #535353; 
+}
+.Top_user_option{
+    width: 95%; height: 35px; line-height:35px; margin: 0 auto; text-align: center;  
+    cursor: pointer; border-bottom:1px solid #535353;
+}
+.Top_user_option:hover{
+    transition: 500ms; background-color: #535353;
+}
+.Top_user_option span,.Top_user_option a{
+    color: #FFFFFF; font-family: 'kanit_regular'; font-size: 17px; text-decoration:none;
+    text-align: left;
+}
+
+.table_options{
+    width: 100%; height: 100px;  background-color: red;
+    padding-top: 2%;padding-left: 2%;
+}
+.table_options div button{
+    margin-left: .5rem; background-color: #FF5A00; border:none; outline:none; color: #FFF;
+}
+.table_options div button img{
+    height: 25px; vertical-align: middle;
+}
+.table_add_btn button, .table_export_btn button{
+    width: 140px; height: 40px; border-radius: 10px;
+}
+.table_add_btn button span{
+    padding-left: .5rem;
+}
+
+.Customers_add, .Products_add {
+   display: none; width: 95%; margin: 0 auto; margin-top: 4%;
+}
+.Customers_add form, .Products_add form{
+    width: 100%;
+}
+.Customers_add form input, .Products_add form input{
+    display: block; width: 40%; height: 35px; border-radius: 10px; outline:none; margin-top: 1%;
+    padding-left: .5rem; font-family: 'comforta_regular'; border:1px solid #DADCE0;
+}
+.Customers_add form button, .Products_add form button{
+    display: block; width: 40%; height: 35px; border-radius: 10px; outline:none; margin-top: 1%;
+    padding-left: .5rem; font-family: 'comforta_bold'; background-color: #FF5A00; color: #FFF;
+    font-family: 'proxima_bold'; border:none; font-size: 20px;
+}
+.Customers_add form button img, .Products_add form button img{
+    height: 25px; vertical-align: middle;
+}
+
+.export_settings{
+    margin-left: 2%;  display: none;
+}
+.export_settings form{
+    width: 300px; position: relative;
+}
+.export_settings form select{
+    width: 85%; height: 35px; border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px; background-color: #F7F7F9; border:none;
+    padding-left: .5rem; outline:none;
+}
+.export_settings form select option{
+    border:none;
+}
+.export_settings form button{
+    position: absolute;  right: 0; width: 15%; height: 35px; border-top-right-radius: 10px; border-bottom-right-radius: 10px;
+    border:none; 
+}
+.export_settings form button img{
+    height: 15px;
+}
+.export_info{
+    margin-left: .5rem;
+}
+.export_info span{
+    font-family: 'comforta_bold'; color: #fff; font-size: 30px;
+}
+#Loader{
+    height: 35px; background-color: transparent;
+}
+.table-fixed {
+    width: 95%; margin: 0 auto; margin-top: 4%;
+}
+
+table{
+    width: 100%;   border-collapse: collapse;
+}
+table thead{
+    background-color: #FF5A00;
+    width: 100%;
+}
+
+table thead tr {
+    color: #fff; font-family: 'kanit_regular';
+}
+table tbody tr:nth-of-type(odd) { 
+    background: #eee; 
+} 
+table tbody{
+    display: block;
+    width: 100%;
+    max-height: 600px;
+    overflow-y: scroll;
+}
+ 
+table thead, table tbody tr {
+    display: table;
+    width: 100%;
+    table-layout: fixed;
+    font-family: 'comforta_regular';
+}
+th {width:1px;}
+td, th { 
+    border: 1px solid #ccc; 
+    text-align: left; 
+}
+td {
+    max-width: 100px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.removeBTN{
+    background-color: transparent; border:none;
+}
+
+ 
+.stats{
+    width: 98%; height: 90%; margin: 0 auto; margin-top: 1%; 
+}
+.stats .stat_divide{
+    width: 100%; height:95%; 
+    margin: 0 auto; margin-left: .5%;
+}
+.stats .stat_divide .sub_stat{
+    width: 100%; height: 48%; 
+    background-color: #F7F7F9; margin: 0 auto; margin-top: 1%;
+}
+
+
+
+.settings{
+    width: 90%; height: 100vh;  margin: 0 auto;  margin-top: 1%; background-color:#FFF;
+}
+.settings div{
+    padding-top: 2%;
+}
+.settings span{
+    font-family: 'comfortaa_bold'; font-weight: bold; font-size: 30px;
+    color: #81827D;
+}
+.settings_db, .settings_soft, .settings_info , .settings_security{
+    width: 95%; margin: 0 auto;
+}
+.settings_db > div {
+    width: 50%; position: relative;
+}
+.settings_db > div > select{
+    width: 90%; height: 35px;  background-color: #fff;
+    border:1px solid #BEC2CA; border-right: none; outline: none;
+    font-family: 'comforta_bold'; padding-left: .5rem;
+}
+
+.settings_db > div > button{
+    position: absolute; right: 0; width: 10%; height: 35px;   outline: none;
+    background-color: #FF5A00; color: #fff; font-family: 'comforta_bold';  border:1px solid #BEC2CA;
+    border-left:none;  white-space: nowrap;
+}
+.settings_soft div {
+    width: 50%;
+}
+.settings_soft div a{
+    width: 50%;
+}
+.settings_soft div a:nth-child(2){
+    margin-left: 1%;
+}
+.settings_soft div a button{
+    width: 100%; height: 35px; outline: none;
+    background-color: #FF5A00; color: #fff; font-family: 'comforta_bold';  border:1px solid #BEC2CA;
+    white-space: nowrap;
+    
+}
+.settings_info  form, .settings_security form{
+    width: 50%; position: relative;
+}
+.settings_info form input, .settings_security form input{
+    width: 100%; height: 35px; border:1px solid #BEC2CA;  margin-top: 1%;
+    padding-left: .5rem; font-family: 'kanit_regular'; outline: none;
+}
+.settings_info form button, .settings_security form button{
+    display: block; position: static; width: 100%; margin-top: 1%; border:none; outline: none;
+    background-color: #FF5A00; color: #fff; font-family: 'comforta_bold';
+    white-space: nowrap;
+}
+ 
+ 
+ 
+ 
+ 
+@media screen and (min-width:200px) and (max-width:1200px)
+{
+    body{
+        background-color: red;
+    }
+    .TopBar {
+        position: fixed;
+        width: 100%;  margin: 0; padding: 0;
+        left: 0;  top:0; right: 0;
+    }
+    .TopBar .topLogo{
+         margin: 0 auto;
+    }
+    .TopBar .topLogo span{
+        font-size:25px;
+    }
+    .leftToggle{
+        display: block;  position: absolute; left: 1.5%; margin-top: 1%;
+    }
+    .topToggle{
+        display: block; position: absolute; right: 2%; margin-top: 1%;
+    }
+    .Sidebar{
+        display: none;
+    }
+    
+    .top_user_options{
+        top: 95px; right: 0; width: 150px;
+    }
+     
+    .Sidebar.active{
+        display: block; width: 80px; transition: 500ms;
+        top: 7%;
+    }
+    .Main_content {
+        width: 100%;
+        height: 100vh;
+        background-color: #FFFFFF;
+        margin:0;
+    }
+    
+    .table_title{
+        white-space: nowrap;
+    }
+    .table_title span{
+        font-size: 16px; padding-left: 4rem;
+    }
+    .table_options{
+        height: 80px; padding-left: 4.5rem;
+    }
+    .Customers_add{
+        width: 80%; margin: 0 auto;
+    }
+   
+     
+    .StoreBox{
+        
+       margin-left:2rem; transition: all 500ms ease-in-out;
+    }
+    .settings{
+        width: 90%; height: 100vh;  margin: 0 auto;  margin-top: 1%; background-color:#FFF;
+        
+    }
+    .settings span{
+        font-family: 'comfortaa_bold'; font-weight: bold; font-size: 30px;
+        color: #81827D;
+    }
+    .settings_db, .settings_soft, .settings_info , .settings_security{
+        width: 95%; margin: 0 auto;
+    }
+    .settings > div >form, .settings > div > div{
+        width: 90%; position: relative;
+    }
+     
+    
+ 
+}
+@media screen and (min-width:200px) and (max-width:500px)
+{
+    html,body{
+        overflow-x: hidden;
+        width: 100%; height: auto;
+    }
+    
+    .topToggle{
+        margin-top: 1%;
+    }
+ 
+    .topMenu.flex.active div{
+        width: 100%;
+    }
+    
+    .topMenu.flex.active  .searchC
+    {
+        width: 100%; display: none;
+    }
+    .topMenu.flex.active .searchC form {
+        margin: 0; padding: 0;   margin: 0 auto;
+    }
+    .topMenu.flex.active .searchC form input{
+        width: 80%;
+    }
+    .topMenu.flex.active .searchC form button{
+        width: 10%; right: 0%;
+    }
+     
+    #add_customer{
+        width: 100%; margin: 0 auto;
+    }
+    #add_customer input{
+        width: 100%;
+    }
+    #add_customer button{
+        width: 100%;
+    }
+    
+    .table_options{
+        width: 100%; margin: 0; padding: 0; 
+        display: flex; justify-content: center; align-items: center;
+    }
+    	/* Force table to not be like tables anymore */
+	table, thead, tbody, th, td, tr { 
+		display: block;  width: 100%;
+	}
+	
+	thead tr { 
+		display: none;
+	}
+	
+	tr { border: 1px solid #ccc; }
+	
+	td {
+        max-width: 100%;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+	
+	td:before { 
+		width: 100%; 	 
+    }
+    .user-dropdown .user-avatar button{
+        border:none; background-color: transparent; outline: none; position: relative;
+    }
+    .user-dropdown .user-avatar button div{
+        background-color: #81827D; padding: 5px; border-radius: 50%;
+    }
+    .user-dropdown .user-avatar button div img{
+        height: 25px; vertical-align: middle; border-radius: 50%;
+    }
+    .user-dropdown .user-avatar button span{
+       display: none;
+    }
+    .user-dropdown .user-avatar button .down{
+        height: 10px; vertical-align: middle; margin-left: .3rem;   
+    }
+    .top_user_options{
+        top: 45px; right: 0; width: 150px;
+    }
+}

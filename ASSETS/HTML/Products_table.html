@@ -1,0 +1,39 @@
+
+<div class="table_title flex"> 
+    <span> SKLEP STORE_NAME++; > PAGE++; </span> 
+  </div>
+  <div class="horizontal"></div>
+  <div class="table_options flex">
+    <div class="table_add_btn">
+      <button onclick="addProducts_form()"><img src="ASSETS//IMG//add.png"><span>Dodaj</span></button>
+    </div>
+  </div>
+  <div class="Products_add">
+    <form id="add_products">
+      <input type="hidden" name="add_product">
+      <input type="hidden" name="store_id" value="STORE_ID++;">
+      <input type="text" name="title" placeholder="Produkt" value="CS:GO">
+      <input type="text" name="username" placeholder="Użytkownik" value="Foxtrot">
+      <input type="text" name="email" placeholder="Email adres" value="foxtrot@wp.pl">
+      <input type="password" name="password" placeholder="Hasło" value="admin123">
+      <button type="submit" >Dodaj</button>
+
+    </form>
+  </div>
+  <table class="table table-fixed table-scroll">
+    <thead>
+      <tr>
+         <th>ID</th>
+         <th>Produkt</th>
+         <th>SKLEP</th>
+         <th>Email</th>
+         <th>HASŁO</th>
+         <th>STATUS</th>
+         <th>Data</th>
+         <th><img id="Loader" src="ASSETS/IMG/loader.gif"></th>
+      </tr>
+    </thead>
+     <tbody class="products_table" id="products_table">
+       
+     </tbody>
+  </table>
