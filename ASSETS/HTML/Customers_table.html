@@ -1,0 +1,95 @@
+
+<div class="table_title"> 
+    <span> SKLEP STORE_NAME++; > PAGE++; </span> 
+  </div>
+  <div class="horizontal"></div>
+  <div class="table_options flex">
+    <div class="table_add_btn">
+      <button onclick="addCustomers_form()"><img src="ASSETS//IMG//add.png"><span>Dodaj</span></button>
+    </div>
+    <div class="table_export_btn">
+      <button>Export <img src="ASSETS//IMG//export.png"></button>
+    </div>
+    <div class="export_settings">
+      <form id="exportF">
+        <input type="hidden" name="export">
+        <input type="hidden" name="param" value="">
+        <select>
+          <option>Wybierz opcje</option>
+          <option>Email</option>
+          <option>Username</option>
+          <option>Email, Username</option>
+          <option>Produkt, Username, Email</option>
+        </select>
+        <button><img src="ASSETS//IMG//ok.png"></button>
+      </form>
+    </div>
+    <div class="export_info">
+        <span> </span>
+    </div>
+  </div>
+  <div class="Customers_add">
+    <form id="add_customer">
+      <input type="hidden" name="add_customer">
+      <input type="hidden" name="store_id" value="STORE_ID++;">
+      <input type="text" name="title" placeholder="Produkt" value="CS:GO">
+      <input type="text" name="username" placeholder="Użytkownik" value="Foxtrot">
+      <input type="text" name="email" placeholder="Email adres" value="foxtrot@wp.pl">
+      <input type="text" name="price" placeholder="Cena" value="250">
+      <input type="text" name="currency" placeholder="Waluta" value="PLN">
+      <button type="submit" onclick="addCustomer()">Dodaj</button>
+
+    </form>
+  </div>
+  <div class="table-search">
+    <form id="customers-search" class="flex">
+      <input type="text" name="searchCustomer" placeholder="Wyszukaj">
+      <button type="submit" id="searchBtn">
+        <img src="ASSETS//IMG//search.png">
+      </button>
+    </form>
+    <div class="table-search-result">
+
+    </div>
+  </div>
+  <table class="table table-fixed">
+    <thead>
+      <tr>
+          <th>ID</th>
+          <th> Produkt</th>
+          <th>SKLEP</th>
+          <th>UŻYTKOWNIK</th>
+          <th>Email</th>
+          <th>Cena</th>
+          <th>HASH</th>
+          <th>Data</th>
+          <th>
+            <div class="windows8">
+              <div class="wBall" id="wBall_1">
+              <div class="wInnerBall">
+              </div>
+              </div>
+              <div class="wBall" id="wBall_2">
+              <div class="wInnerBall">
+              </div>
+              </div>
+              <div class="wBall" id="wBall_3">
+              <div class="wInnerBall">
+              </div>
+              </div>
+              <div class="wBall" id="wBall_4">
+              <div class="wInnerBall">
+              </div>
+              </div>
+              <div class="wBall" id="wBall_5">
+              <div class="wInnerBall">
+              </div>
+              </div>
+              </div>
+          </th>
+      </tr>
+    </thead>
+     <tbody class="customers_table" id="customers_table">
+       
+     </tbody>
+  </table>

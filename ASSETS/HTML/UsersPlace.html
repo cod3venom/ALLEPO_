@@ -1,0 +1,69 @@
+<div class="Users ">
+    <div class="table_options flex">
+        <div class="user_add_button">
+            <button onclick="add_user()"><img src="ASSETS//IMG//add.png"><span>Dodaj</span></button>
+          </div>
+          <div class="user_game_append">
+            <button onclick="list_for_game_append()"><img src="ASSETS//IMG//seminar.png"><span>Przypisz gre</span></button>
+          </div>
+    </div>
+    <div class="foundUsers">
+
+    </div>
+    <div class="add_users">
+        <form id="add_user" method="POST" action="operator.php">
+            <input type="hidden" name="register">
+            <input type="text" name="username" placeholder="Nazwa użytkownika" value="kupujacy">
+            <input type="email" name="email" placeholder="Email " value="kupujacy@gmail.com">
+            <input type="text" name="password" placeholder="Hasło" value="admin">
+            <button type="submit">Dodaj</button>
+        </form>
+    </div>
+    <div class="edit_users">
+        <form id="edit_user" method="POST" action="operator.php">
+            <input type="hidden" name="editUser">
+            <input type="text" name="username" placeholder="Nazwa użytkownika" value="">
+            <input type="email" name="email" placeholder="Email " value="">
+            <input type="text" name="password" placeholder="Hasło" value="">
+            <button type="submit">Zapisz</button>
+        </form>
+    </div>
+    <div class="assign_game centered">
+        <div id="assign_selector" class="centered">
+            <form id="assignment">
+                <input type="hidden" name="assign">
+                <input type="hidden" name="customer">
+                <input type="hidden" name="product">
+                <select id="all_games">
+                    
+                </select>
+                <select id="list_users">
+        
+                </select>
+                <button type="submit" id="assignBtn">Przypisz</button>
+            </form>
+        </div>
+    </div>
+    <div class="delete_game centered">
+        <form id="deletGameF" class="flex">
+            <span id="selectedUser"></span>
+            <select id="user_games">
+                
+            </select>
+            <input type="hidden" name="username">
+            <input type="hidden" name="deletGame">
+            <button type="submit">Usuń</button>
+        </form>
+    </div>
+
+    <div id="all_users">
+
+    </div>
+</div>
+<div class="search_user centered">
+    <form id="searchUserF">
+        <input type="hidden" name="usersearch">
+        <input type="text" placeholder="Nazwa użytkownika" name="username">
+        <button type="submit">Search</button>
+    </form>
+</div>

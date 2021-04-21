@@ -1,0 +1,87 @@
+
+html,body{
+    width: 100%; height: 100%; overflow: hidden;
+    margin: 0;  background: #ECEFF1; 
+    background-blend-mode: multiply;
+}
+.shadow{
+	box-shadow: 0 8px 10px 1px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12), 0 5px 5px -3px rgba(0, 0, 0, 0.2); 
+}
+.flex{
+    display: flex; justify-content: flex-start; align-items: flex-start;
+}
+.between{
+    display: flex; justify-content: space-between; 
+}
+.centered{
+    display: flex; justify-content: center; align-items: center;
+}
+
+.my_topBar{
+    position: fixed; left:0; top: 0; right: 0; width: 100%; height: 60px;
+    background-color:#171A21;  
+}
+.my_board{
+    width: 100%; height: 100vh; max-height: 99vh; background-color: #1B2838; overflow-y: scroll;
+    margin: 0 auto; margin-top: 65px;
+}
+.my_brand{
+    margin: 0 auto; color: #BEBCBA; font-size: 30px; font-family: 'kanit_regular'; font-weight: bold;
+}
+.my-avatar{
+    position: absolute; right: 2%;  width: auto; 
+}
+.my-avatar button{
+    background-color: transparent; border:none; outline:none;
+}
+.my-avatar button div img{
+    height: 35px;
+}
+.my-avatar button span{
+    color: #fff; font-family: 'kanit_regular'; font-size:20px;
+}
+.my-avatar button img{
+    height: 15px;
+}
+#logout>img{
+    height: 25px; vertical-align: middle;
+}
+
+
+#all_games{
+    width: 95%; margin: 0 auto; margin-top: 2%;
+    display: flex; flex-wrap: wrap;
+}
+.game{
+    width: 300px; height: 300px; margin-left: 1%; margin-top: 6%;
+    transition: 500ms; cursor: pointer;
+}
+.game:hover{
+    transform: scale(1.1); transition: 500ms;
+}
+.game-content{
+    width: 100%; margin: 0 auto; height: auto;
+}
+.game-title{
+    width: 100%; height: 35px; line-height: 35px; background-color: #1E7297;
+
+}
+.game-title > span{
+    color: #fff; font-size: 16px; font-family: 'kanit_regular'; white-space: nowrap; overflow: hidden;
+    padding-left: .2rem;  overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+ }
+.game-img > img{
+    width: 299px; height: 299px;
+}
+.game-footer{
+    width: 100%;
+}
+.game-footer > a {
+    text-decoration:none;
+}
+.game-footer > a > button{
+    width: 100%; height: 35px; border:none; background-color: #171A21; color: #fff; font-family: 'comforta_bold';
+    font-size: 19px; cursor: pointer;
+}

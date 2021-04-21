@@ -1,0 +1,56 @@
+html,body{
+    width: 100%; height: 100%; overflow: hidden;
+    margin: 0;  background: #ECEFF1; 
+    background-blend-mode: multiply;
+}
+.shadow{
+	box-shadow: 0 8px 10px 1px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12), 0 5px 5px -3px rgba(0, 0, 0, 0.2); 
+}
+.flex{
+    display: flex; justify-content: flex-start; align-items: flex-start;
+}
+.between{
+    display: flex; justify-content: space-between; 
+}
+.centered{
+    display: flex; justify-content: center; align-items: center;
+}
+.loginContainer{
+    position: relative; 
+    width: 100%; height: 100%;
+    text-align: center;
+    display: flex; justify-content: center; align-items: center;
+}
+#LoginF{
+    background-color: #FFF;
+    width: 50%; height: auto; position: relative;
+    padding-bottom: 1%;
+}
+#LoginF .Login_LOGO{
+    text-align: center;
+}
+#LoginF .Login_LOGO h2{
+    font-family: 'conforta_bold'; font-size: 80px; color: #FF5A00;
+}
+#LoginF input{
+    margin: 0 auto;
+    display: block; width: 95%; height: 35px; margin-top: 2%; text-align: center;
+    border-radius: 10px; outline:none; border:1px solid #CCCCCC; font-family: 'kanit_regular';
+    font-size: 20px; transition:all 500ms ease-in-out; cursor: pointer;
+}
+#LoginF input:hover{
+    transform: scale(1.05); transition:all 500ms ease-in-out;
+}
+#LoginF button{
+    margin: 0 auto;
+    display: block; width: 95%; height: 35px; margin-top: 2%; border:none; border-radius: 10px;
+    background-color: #FF5A00; color: #fff; font-family: 'proxima_regular'; outline: none;
+    font-size: 20px; cursor: pointer;
+}
+
+@media screen and (min-width:200px) and (max-width:1024px)
+{
+    #LoginF{
+        width: 95%; margin: 0 auto;
+    }
+}

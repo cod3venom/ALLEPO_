@@ -1,0 +1,30 @@
+ 
+@font-face{
+    font-family: 'proxima_bold';
+    src: url('FONTS/PROXIMA/ProximaNova-Bold.ttf');
+}
+
+@font-face{
+    font-family: 'proxima_regular';
+    src: url('FONTS/PROXIMA/ProximaNova-Regular.ttf');
+}
+@font-face{
+    font-family: 'kanit_regular';
+    src: url('FONTS/KANIT/Kanit-Regular.ttf');
+}
+@font-face{
+    font-family: 'kanit_semi';
+    src: url('FONTS/KANIT/Kanit-SemiBold.ttf');
+}
+@font-face{
+    font-family: 'kanit_medium';
+    src: url('FONTS/KANIT/Kanit-Medium.ttf');
+}
+@font-face{
+    font-family: 'comforta_bold';
+    src: url('FONTS/COMFORTA/Comfortaa-Bold.ttf');
+}
+@font-face{
+    font-family: 'comforta_regular';
+    src: url('FONTS/COMFORTA/Comfortaa-Regular.ttf');
+}

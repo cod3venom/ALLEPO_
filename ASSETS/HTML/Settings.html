@@ -1,0 +1,56 @@
+<div class="table_title"> 
+    <span> Pulpit > Ustawienia </span> 
+  </div>
+<div class="x"></div>
+<div class="settings">
+    <div class="settings_db">
+        <span>Baza danych</span>
+        <div>
+            <select id="tableList">
+                <option>CUSTOMERS</option>
+                <option>PRODUCTS</option>
+            </select>
+            <button onclick="TableEmpty()" id="TableEmpty">Wyczysc</button>
+        </div>
+
+    </div>
+    <div class="settings_soft">
+        <span>Oprogramowanie</span>
+        <div class="flex">
+            <a href="operator.php?factory&reset">
+                <button>Ustawienia fabryczne</button>
+            </a>
+            <a href="operator.php?purgeRemove">
+                <button>Odinstaluj</button>
+            </a>
+        </div>
+    </div>
+    <div class="settings_info">
+        <span>Dane  osobiste</span>
+        <form id="Settings_change_name" method="POST" action="operator.php">
+            <input type="hidden" name="updateInfo">
+            <input type="text" name="username" placeholder="USERNAME++;">
+            <input type="email" name="email" placeholder="EMAIL++;">
+            <button type="submit">Zastosuj</button>
+        </form>
+    </div>
+    <div class="settings_security">
+        <span>Bezpieczenstwo</span>
+        <form id="Settings_change_name" method="POST" action="operator.php">
+            <input type="hidden" name="updateSec">
+            <input type="text" name="password" placeholder="Haslo">
+            <input type="text" name="repeat" placeholder="Powtorz haslo">
+            <button>Zastosuj</button>
+        </form>
+    </div>
+    <div class="settings_web">
+        <span>Ustawienia Strony</span>
+        <div class="Settings_change_brandName">
+            <form id="Settings_change_name" method="POST" action="operator.php">
+                <input type="hidden" name="BrandNameSet">
+                <input type="text" name="name" placeholder="Nazwa strony">
+                <button>Zastosuj</button>
+            </form>
+        </div>
+    </div>
+</div>
