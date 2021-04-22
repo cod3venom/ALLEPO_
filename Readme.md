@@ -1,6 +1,6 @@
 # ALLEPO V1
 
-#### ALLEPO V1 to is a software for automating the sale of digital products on allegro.pl and allegrolokalnie.pl
+#### ALLEPO V1 is a software for automating the sale of digital products on allegro.pl and allegrolokalnie.pl
 ## Products set
 ### ALLEPO V1 has four main products
    * ALLEPO Control Panel
